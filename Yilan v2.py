@@ -103,7 +103,7 @@ def oyunbitti():
     # 2 Saniye Sonra Oyun Kendini Kapatacak,
     sure.sleep(2)
 
-    # Pygame Kütüphanesini Kapatma
+    # Oyun Yeniden Başlatılmadıysa Pygame Kütüphanesini Kapatma
     for eylem2 in pygame.event.get():
         if eylem2.type == pygame.KEYDOWN:
             if eylem2.key == pygame.K_1:
@@ -111,8 +111,6 @@ def oyunbitti():
             else:
                 pygame.quit()
                 quit()
-
-    # Programdan Çıkış
 
 
 # Ana Fonksiyon
